@@ -46,6 +46,18 @@ Para ejecutar la aplicación utilizando Docker Compose, sigue estos pasos:
   │── README.md         # Documentación
   ```
 
+## 🔌 Endpoints
+
+| Método | Ruta | Auth | Descripción |
+|---|---|---|---|
+| POST | `/register` | No | Registro de usuario |
+| POST | `/login` | No | Inicio de sesión |
+| GET | `/spaces` | No | Lista de espacios disponibles |
+| GET | `/spaces/:id` | No | Detalle de un espacio |
+| GET | `/reservations` | Sí | Lista de reservas del usuario autenticado |
+| POST | `/reservations` | Sí | Crear una reserva |
+| DELETE | `/reservations/:id` | Sí | Cancelar una reserva |
+
 ## 🏛️ Estructura de la Base de Datos  
 
 La base de datos sigue un modelo relacional con las siguientes tablas:
